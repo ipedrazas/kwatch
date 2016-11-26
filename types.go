@@ -1,7 +1,7 @@
 package main
 
-// RdsEvent should be ApiEvent
-type RdsEvent struct {
+// Event should be ApiEvent
+type Event struct {
 	Type   string
 	Object RdsDB
 }

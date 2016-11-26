@@ -68,7 +68,7 @@ func main() {
 
 	log.Println("Watching for Events.")
 	wg.Add(1)
-	watchRdsEvents(doneChan, &wg)
+	watchEvents(doneChan, &wg)
 	wg.Add(1)
 
 	signalChan := make(chan os.Signal, 1)
